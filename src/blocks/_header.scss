@@ -1,7 +1,7 @@
 @import '../utils/variables';
 
 :root {
-  --blue-color: #00acdc;
+  --blue-color: #{$main-color};
 }
 
 html {
@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  background-color: $standard-white;
+  background-color: $background-color;
 
   &__inner {
     max-width: 1200px;
@@ -76,6 +76,7 @@ body {
 .is-active {
   color: var(--blue-color);
   position: relative;
+  transition: color 0.3s ease;
 
   &::after {
     content: '';
